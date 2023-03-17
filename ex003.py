@@ -1,5 +1,5 @@
-print('Olá, por favor, preencha os campos abaixo de acordo com sua data de nascimento:')
-dia = input('Dia:')
-mês = input('Mês:')
-ano = input('Ano:')
-print('Você nasceu no dia', dia, 'de', mês, 'de', ano, '. Correto?')
+print('Insira os números para soma:')
+n1 = int(input('Primeiro Número:'))
+n2 = int(input('Segundo Número:'))
+s = n1+n2
+print('A soma entre {} e {} vale {}'.format(n1, n2, s))

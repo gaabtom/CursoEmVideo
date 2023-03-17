@@ -1,4 +1,6 @@
-print('Insira os números para soma:')
-num1 = input('Primeiro Número:')
-num2 = input('Segundo Número:')
-print('A soma é', int(num1) + int(num2), '.')
+x = input('Digite algo para ver seu tipo primitivo e informações:')
+print('{} é do tipo {}!'.format(x, type(x))), print('{} é numérico? {}'.format(x, x.isnumeric())), \
+    print('{} faz parte do alfabeto? {}'.format(x, x.isalpha())), \
+    print('{} está em letras maiúsculas? {}'.format(x, x.isupper())), \
+    print('{} é alfabético-númerico? {}'.format(x, x.isalnum())), \
+    print('{} é caractere? {}'.format(x, x.isascii()))
