@@ -1,6 +1,10 @@
 x = input('Digite algo para ver seu tipo primitivo e informações:')
-print('{} é do tipo {}!'.format(x, type(x))), print('{} é numérico? {}'.format(x, x.isnumeric())), \
-    print('{} faz parte do alfabeto? {}'.format(x, x.isalpha())), \
-    print('{} está em letras maiúsculas? {}'.format(x, x.isupper())), \
-    print('{} é alfabético-númerico? {}'.format(x, x.isalnum())), \
-    print('{} é caractere? {}'.format(x, x.isascii()))
+print(f'É do tipo primitivo: {type(x)}')
+print(f'É numérico? {x.isnumeric()}')
+print(f'É alfabético? {x.isalpha()}')
+print(f'Está em maiúsculas? {x.isupper()}')
+print(f'Está em minúsculas? {x.islower()}')
+print(f'É alfabético-númerico? {x.isalnum()}')
+print(f'É captalizada? {x.istitle()}')
+print(f'Só tem espaços? {x.isspace()}')
+
