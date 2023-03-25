@@ -3,9 +3,10 @@
 
 la = float(input('Qual é a largura da parede em metros?'))
 a = float(input('E a altura em metros?'))
-ar = la*a
-lt = ar/2
-print(f'A área da parede é de {ar}m², e precisará de {lt} litros de tinta para pintá-la.')
+ar = la * a
+lt = ar / 2
+print(f'Sua parede tem a dimensão de {la}x{a} e sua área é de {ar}m².\nPara pintá-la, você precisará de {lt} litros de tinta.')
+
 
 
 
