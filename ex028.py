@@ -1,9 +1,9 @@
 # Faça o computador pensar em um número entre 0 e 5, e se o usuário acertar o número ele dirá que venceu, ou perdeu se errou.
 import random
 lista = [0, 1, 2, 3, 4, 5]
-numero_maquina = random.choice(lista)
-numero_usuario = int(input('Estou pensando em um número... Consegue adivinhar qual?'))
-if numero_usuario == numero_maquina:
-    print(f'Parabéns! Você ganhou! O número que pensei foi {numero_maquina}! ;)')
+número_máquina = random.choice(lista)
+número_jogador= int(input('Estou pensando em um número entre 0 e 5, consegue adivinhar qual? '))
+if número_jogador == número_máquina:
+    print(f'Parabéns, você ganhou! O número que pensei foi de fato {número_máquina}! ;)')
 else:
-    print(f'Féeum, féum féeumm... Você perdeu! O número que pensei foi {numero_maquina}! :p')
+    print(f'Que azar! Você perdeu, o número que eu pensei foi {número_máquina}! Mais sorte da próxima vez! :p')
