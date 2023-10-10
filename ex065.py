@@ -15,7 +15,7 @@ while escolha not in 'Nn':
         if num > maior:
             maior = num
         if num < menor:
-            menor =  num
+            menor = num
 media = soma / contador
 print(f'Você digitou {contador} números. A média entre eles é {media:.2f}.')
 print(f'O maior valor digitado foi {maior} e o menor foi {menor}.')
