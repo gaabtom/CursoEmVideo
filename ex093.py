@@ -8,11 +8,9 @@ soma = 0
 dados['Nome'] = str(input('Nome do Jogador: '))
 quantpartidas = int(input(f'Quantas partidas {dados["Nome"]} jogou? '))
 for c in range(quantpartidas):
-    gols = (int(input(f'Quantos gols na partida {c+1}? ')))
-    soma += gols
-    listagols.append(gols)
+    listagols.append(int(input(f'Quantos gols na partida {c+1}? ')))
 dados['Gols'] = listagols
-dados['Total'] = soma
+dados['Total'] = sum(listagols)
 print('-=' * 30)
 print(dados)
 print('-=' * 30)
@@ -20,5 +18,6 @@ for k, v in dados.items():
     print(f'O campo {k} tem o valor {v}.')
 print('-=' * 30)
 print(f'O jogador {dados["Nome"]} jogou {quantpartidas} partidas.')
-for i in range(quantpartidas):
-    print(f'    => Na partida {i+1}, fez {dados["Gols"][i]} gols.')
+for i, v in enumerate(dados['Gols']):
+    print(f'    => Na partida {i+1}, fez {v} gols.')
+print(f'Foi um total de {dados["Total"]} gols.')
